@@ -47,7 +47,7 @@ At this point, you may have to do a bit of additional work: adding/committing lo
 ### 0.3.3. Branches
 Sometimes you'll want to work on an entire feature in a separate repository: committing your changes directly to the master branch might not make sense, as you'll only want to merge your changes in once you finish the feature.
 
-In cases like this, it's best to make a new **branch**: this is a spinoff of the master repository, in which you can commit changes without worrying about the master branch until you're ready to merge it in.
+**In cases like this, it's best to make a new **branch**: this is a spinoff of the master repository, in which you can commit changes without worrying about the master branch until you're ready to merge it in.**
 
 To create a new branch and use it, you can use `git checkout -b <branch name>`. This is shorthand for `git branch <branch name>` followed by `git checkout <branch name>`: the first creates a new branch, and the 2nd switches your local repository to the new branch. The commits you make will now go to `<branch name>` instead of the origin.
 
