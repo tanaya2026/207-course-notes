@@ -314,7 +314,8 @@ Notice that we did not write:
 StringBuilder sb = "ban";
 ```
 
-This would have generated the error `incompatible types: String cannot be converted to StringBuilder`.
+
+**This would have generated the error `incompatible types: String cannot be converted to StringBuilder`.**
 
 ### 1.4.5. Single Character Strings: char
 We can have a `String` that contains just one character.
