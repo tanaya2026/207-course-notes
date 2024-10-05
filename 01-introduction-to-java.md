@@ -97,7 +97,7 @@ If we wish, we can assign a value immediately after declaring the variable, even
 int i = 42;
 ```
 
-In our previous example with just `int i;` we would be postponing assigning a value to `i` until later. In the meanwhile, the variable's name is known to Java, space has been reserved to store its value, and it is given a default value. For `int`s, the default value is `0`; for objects, it is `null` (the equivalent to Python's `None`).
+**In our previous example with just `int i;` we would be postponing assigning a value to `i` until later. In the meanwhile, the variable's name is known to Java, space has been reserved to store its value, and it is given a default value. For `int`s, the default value is `0`; for objects, it is `null` (the equivalent to Python's `None`).**
 
 ### 1.2.4. Keeping track of our variables
 Java must keep track of four things associated with each variable:
@@ -107,7 +107,7 @@ Java must keep track of four things associated with each variable:
 3. The memory space used to hold the value of the variable.
 4. The value of the variable, which can be given with an assignment statement.
 
-The only one of these that can change is the value of the variable.
+**The only one of these that can change is the value of the variable.**
 
 ### 1.2.5. Errors
 Java checks as many things as it can, in order to help us avoid bugs. These are some errors related to variables and types that it can detect:
