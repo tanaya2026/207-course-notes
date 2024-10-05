@@ -82,7 +82,7 @@ Java is different. Rather than writing type hints, which are not enforced but ma
 ### 1.2.2. Declaring Types
 In Python, when we say `type(stuff)`, we are told the type of the object that `stuff` refers to. The variable `stuff` itself has no type, and it can refer to an object of any type.
 
-In Java, every value has a type, but so does *every variable*. We must specify a variable's type before assigning a value to the variable, and its type can never change. This is called declaring the variable. As an example:
+In Java, every value has a type, but so does *every variable*. **We must specify a variable's type before assigning a value to the variable, and its type can never change. This is called declaring the variable. As an example:**
 
 ```java
 int i;
