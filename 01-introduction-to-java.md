@@ -476,9 +476,9 @@ Arrays are reference types. This means that when we declare an array such as `nu
 
 ### 1.6.2. Constructing an Array
 
-An array in Java is a reference type, not a primitive type. This means that `numbers` will not itself contain a sequence of `int`s; it will *refer* to an object containing a sequence of `ints`.
+**An array in Java is a reference type, not a primitive type. This means that `numbers` will not itself contain a sequence of `int`s; it will *refer* to an object containing a sequence of `ints`.**
 
-As you know by now, this means we must construct the object, and in Java, we do this with `new`. You also know that this will call an appropriate constructor, choosing the right one based on the number and type of arguments we give. Normally in Java, this looks like an ordinary method call, except that instead of a method name we give a class name. For example, if `house` were declared to be of type `String`, you could write
+**As you know by now, this means we must construct the object, and in Java, we do this with `new`.** **You also know that this will call an appropriate constructor, choosing the right one based on the number and type of arguments we give. Normally in Java, this looks like an ordinary method call, except that instead of a method name we give a class name. For example, if `house` were declared to be of type `String`, you could write**
 
  
 ```java
