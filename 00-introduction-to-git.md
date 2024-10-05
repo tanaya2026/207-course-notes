@@ -36,7 +36,7 @@ Thus the general workflow for making changes is as follows:
 
 - `git status`: Lets us see what files have changed in our local copy
 - `git add <files>`: Lets us add ("stage") files that we want to modify in the origin.
-- `git commit -m "<message>"`: Saves our changes to the local repository, labelling the added changes with a message to describe our changes.
+- `git commit -m "<message>"`: Saves our changes to the **local repository**, labelling the added changes with a message to describe our changes.
 - `git push`: Pushes changes to the origin repository
 
 One caveat to this workflow: if there are changes in the master repository that you don't have yet in your local version, you'll need to **pull** these revisions.
