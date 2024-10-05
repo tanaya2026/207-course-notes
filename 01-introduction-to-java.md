@@ -408,7 +408,7 @@ int size = band.length();
 You may find it helpful to imagine you are asking the object to do something for you. For instance, when we write band.length() it is like saying "Hey band, you're a String: tell me your length!"
 
 ### 1.5.4. Class methods
-Some methods are associated not with individual instances of a class, but with the class as a whole. We call these "class methods" (or "static methods", since they are defined using the keyword `static`). We access a class method via the class name. For example:
+**Some methods are associated not with individual instances of a class, but with the class as a whole. We call these "class methods" (or "static methods", since they are defined using the keyword `static`). We access a class method via the class name. For example:**
 
 ```java
 // Call a class method via the class name.
