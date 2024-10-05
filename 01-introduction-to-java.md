@@ -457,8 +457,8 @@ If we know that we don't need an object any more, we can explicitly drop a refer
 ## 1.6. Arrays
 Arrays are the simplest type that Java provides for storing a number of items. They are a little like Python lists, but much, much simpler. In particular:
 
-- An array has a fixed length. It is set when we construct the array and can never change after that.
-- All elements must have the same type, which we must state at the moment when we declare any variable that will refer to an array. Essentially, the type of the variable is not just "array" (we'll see the Java way to say that in a moment) but "array of `int`" or "array of `string`", for example.
+**- An array has a fixed length. It is set when we construct the array and can never change after that.**
+**- All elements must have the same type, which we must state at the moment when we declare any variable that will refer to an array. Essentially, the type of the variable is not just "array" (we'll see the Java way to say that in a moment) but "array of `int`" or "array of `string`", for example.**
 
 ### 1.6.1. Declaring an Array
 
