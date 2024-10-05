@@ -41,6 +41,9 @@ Thus the general workflow for making changes is as follows:
 
 One caveat to this workflow: if there are changes in the master repository that you don't have yet in your local version, you'll need to **pull** these revisions.
 
+
+**The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.**
+
 ### 0.3.2. Pulling new revisions
 As you work with a repository, you'll likely need to copy over any changes into your local repository. To do this, you can use a simple `git pull` command.
 
