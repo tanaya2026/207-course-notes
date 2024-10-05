@@ -23,6 +23,8 @@ Git is the specific type of version control that we'll be using in this course.
 
 **Note**: In git, the master repository is also known as the **origin**. We use the command `git clone <url>` to get a local copy of the repository. **This is similar to just downloading all of the files, but with the fancy addition of having a way to track which files we've altered via `git status`.**
 
+** Note the difference between fork and cloning
+
 ### 0.3.1. Making changes to the origin
 After modifying, adding, and removing files as needed, we likely want these changes to be made in the master repository. To do this, we use **`git add <files>` to add all of the files that we've changed and that we want to change in the master repository.**
 
