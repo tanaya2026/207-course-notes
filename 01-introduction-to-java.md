@@ -26,7 +26,7 @@ We need to put the code for printing `7 + 5` inside a method in our class, and w
 
 In Python, we can run a single line of code at the shell, or we can run an entire module. A Python module is simply the code that exists in a single file. When we run a module, the code is executed from top to bottom.
 
-In Java, we don't have the concept of a module. Instead, everything is organized around classes. When we execute a program in Java, we actually execute a class. Of course, a class may have multiple methods in it, so which one is executed? There is a special method called `main` that any class may define. If we run that class, the main method is executed.
+**In Java, we don't have the concept of a module. Instead, everything is organized around classes. When we execute a program in Java, we actually execute a class. Of course, a class may have multiple methods in it, so which one is executed? There is a special method called `main` that any class may define. If we run that class, the main method is executed.**
 
 The `main` method must be defined with a very specific signature in order to be recognized as this special method:
 
@@ -57,7 +57,7 @@ class Hello {
 }
 ``` 
 
-You might wonder why the method has this multi-part name. System is a class, and out is a static data member defined in that class. It is an instance of another class that has many methods for printing things, including `println`. We pronounce this "print line"; this method puts a newline character at the end of whatever you are printing.
+You might wonder why the method has this multi-part name. **System is a class, and out is a static data member defined in that class. It is an instance of another class that has many methods for printing things, including `println`. We pronounce this "print line"; this method puts a newline character at the end of whatever you are printing.**
 
 The **semi-colon** is the next difference from Python. In Python, a statement ends when we hit the return key (unless we add a backslash to say that we want to continue on the next line). In Java, we use a semi-colon to mark the end of a statement.
 
