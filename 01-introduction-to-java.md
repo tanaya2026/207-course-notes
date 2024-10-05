@@ -8,7 +8,7 @@ Let's begin by looking at something very simple in Python:
 and see how to do it in Java.
 
 ### 1.1.1. Defining classes
-In Java, no code can exist outside of a class, and there are no functions, only methods. So if we want to evaluate and print `7 + 5`, we need to define a class and a method to put that code in.
+**In Java, no code can exist outside of a class, and there are no functions, only methods.** So if we want to evaluate and print `7 + 5`, we need to define a class and a method to put that code in.
 
 Here is the outline of a class called `Hello`:
 ```java
@@ -17,7 +17,7 @@ class Hello {
 }
 ```
 
-Notice the curly braces. In Python, we used indentation to indicate what code was inside of what. In Java, we accomplish this with curly braces and the indentation makes no difference to the code. Of course indentation makes a big difference to humans, because it makes code readable.
+Notice the curly braces. In Python, we used indentation to indicate what code was inside of what. In Java, we accomplish this with curly braces and **the indentation makes no difference to the code**. Of course indentation makes a big difference to humans, because it makes code readable.
 
 The double slash indicates that the rest of the line is a comment.
 
