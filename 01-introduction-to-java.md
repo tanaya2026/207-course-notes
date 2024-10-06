@@ -666,7 +666,7 @@ Suppose these lines occur inside a `main` method in a class called `Demo`. After
 
 ![Aliasing memory model example in Java](images/1.7-1.png)
 
-We have two variables referencing the very same `String` object. Whenever two variables reference the same object we say that they are **aliases**, or that we are aliasing.
+**We have two variables referencing the very same `String` object. Whenever two variables reference the same object we say that they are **aliases**, or that we are aliasing.**
 
 (Compare this to the dictionary definition of the word "alias"! An alias is used when a person is also known under a different name. For example, we might say "Eric Blair, alias George Orwell". We have two names for the same thing, in this case a person.)
 
