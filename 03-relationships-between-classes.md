@@ -214,4 +214,4 @@ double double_x = (double) x;
 int int_y = (int) y;
 ```
 
-When we cast objects, we essentially 're-label' the type, but otherwise leave it unchanged. However, when we cast primitives, we're adjusting the value of the variable itself: the changes may potentially be irreversible!
+**When we cast objects, we essentially 're-label' the type, but otherwise leave it unchanged. However, when we cast primitives, we're adjusting the value of the variable itself: the changes may potentially be irreversible!**
