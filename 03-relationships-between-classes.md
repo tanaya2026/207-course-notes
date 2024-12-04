@@ -14,7 +14,7 @@ class Child extends Parent {
 }
 ```
 
-This means that class `Child` inherits all of the methods and variables defined in `Parent`, and that `Child` is an instance of `Parent`.
+This means that class `Child` inherits all of the methods and **variables** defined in `Parent`, and that `Child` is an **instance** of `Parent`.
 
 Throughout this chapter, we will be using the terms parent class/child class and superclass/subclass interchangeably.
 
