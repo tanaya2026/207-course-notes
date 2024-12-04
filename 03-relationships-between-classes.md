@@ -188,7 +188,7 @@ for (Animal a : animals){ here variable of type Animal value is either cat or do
 Even though we have multiple types of objects, we can deal with them in a uniform matter. If we didn't have polymorphism here, we wouldn't be able to have such a simple and clean loop!
 
 ## 3.5. Casting
-Unlike in Python, all variables have a declared type in Java. Often, we'll want to convert between the types used: sometimes a more general superclass is better for one situation, but a subclass is better in another. Casting is when we change the type of an object to another, often in order to access more specific functionality.
+Unlike in Python, all variables have a declared type in Java. Often, we'll want to convert between the types used: sometimes a more general superclass is better for one situation, but a subclass is better in another. **Casting is when we change the type of an object to another, often in order to access more specific functionality.**
 
 For example, suppose we have the `Animal` example from 3.4., but we want a `Cat` to `purr` after eating. We could do the following:
 
