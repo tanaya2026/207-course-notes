@@ -21,7 +21,7 @@ Throughout this chapter, we will be using the terms parent class/child class and
 ### 3.1.1. Abstract classes
 Abstract classes are classes that are not meant to be initialized. In Python, we signified a method was abstract by having a method that would raise a `NotImplementedError`. Any non-abstract child class would then have to implement this method.
 
-In Java, we use the `abstract` keyword to signify that a class is abstract: this enforces the fact that no instance of the class should be created, even if there are no abstract methods in the class! We also use the `abstract` keyword for any abstract methods.
+**In Java, we use the `abstract` keyword to signify that a class is abstract: this enforces the fact that no instance of the class should be created, even if there are *no abstract methods in the class!* We also use the `abstract` keyword for any abstract methods.**
 
 ```java
 abstract class AbstractClass{
@@ -29,7 +29,7 @@ abstract class AbstractClass{
 }
 ```
 
-Any non-abstract class that extends an abstract class then has to implement the body of all abstract methods.
+**Any non-abstract class that extends an abstract class then has to implement the body of all abstract methods.**
 ```java
 class NonAbstract extends AbstractClass{
     void something(){
@@ -39,7 +39,7 @@ class NonAbstract extends AbstractClass{
 ```
 
 ### 3.1.2. Overriding methods
-In Python, we could override a parent class' methods by redefining it. In Java, we do the same thing, but we also include an `@Override` annotation. This informs the compiler that method is meant to override an element in a superclass. While the annotation is not required, including it helps us prevent errors (e.g. misspelling the name of a method, forgetting a parameter, etc.)
+In Python, we could override a parent class' methods by redefining it. In Java, we do the same thing, but we also include an **`@Override` annotation. This informs the compiler that method is meant to override an element in a superclass. While the annotation is not required, including it helps us prevent errors (e.g. misspelling the name of a method, forgetting a parameter, etc.)**
 
 For example, if we have the following parent class:
 ```java
@@ -62,11 +62,34 @@ class Child extends Parent {
 ```
 
 ## 3.2. Interfaces
-In Java, you can only extend a single class: you have one parent class, and that's it! However, sometimes we want to describe more behaviours for a class in a way that just one parent won't suffice.
+**In Java, you can only extend a single class: you have one parent class, and that's it! However, sometimes we want to describe more behaviours for a class in a way that just one parent won't suffice.**
 
 For example, suppose we're writing a program to simulate plants. We would have a class called `Plant`: all `Plant`s are able to `breathe` and `grow`! We could also have subclasses such as `Wheat` and `Flower`s with their own subclasses. However, suppose we want to indicate that some plants are edible for humans: for instance `Corn` would have an `eat` method, and so would `Basil`. Not all plants are edible, so we can't add that method to `Plant`. We *could* define an `EdiblePlant` class, but then we would also need `EdibleWheat`, `EdibleFlower`, and so on: this isn't a very clean solution!
 
-In cases where we want to define a property of a class, we can use interfaces. Interfaces are similar to classes, except they have no implementation details at all: only method signatures! They can also have variables, but these variables must be `static` and `final`. In addition, **everything** in an interface must be `public`.
+In cases where we want to define a property of a class, we can use interfaces. Interfaces are similar to classes, except they have no implementation details at all: only method signatures! **They can also have variables, but these variables must be `static` and `final`. In addition, **everything** in an interface must be `public`.**
+
+EXTRA I ADDED:
+
+In Java, interfaces are designed to define a contract for classes to implement, specifying what methods a class must include but not how those methods are implemented. Static and final variables in interfaces serve a specific purpose and are governed by Java's design principles.
+
+Why Are Interface Variables static and final?
+Constant Nature:
+
+Variables in interfaces are inherently constants because they are static (shared among all implementations) and final (cannot be changed once initialized). This ensures the values are uniform and immutable across all classes implementing the interface.
+Shared Across Implementations:
+
+The static modifier means the variable belongs to the interface itself, not any particular implementation class. This ensures all implementing classes access the same shared value.
+Immutability:
+
+The final modifier ensures the variable's value cannot be modified, maintaining consistency and preventing accidental or intentional changes in the implementation classes.
+Design Intent:
+
+Interfaces are meant to define behaviors, not hold state. Allowing mutable variables would violate this principle, as interfaces are not intended to manage or encapsulate mutable data.
+
+
+
+
+
 
 
 For our example, we would define an `Edible` interface such as:
@@ -86,7 +109,7 @@ class Corn extends Plant implements Edible {
 
 ```
 
-We can implement as many interfaces as we want! In addition, interfaces can also `extend` other interfaces (*not* `implements` -- an interface doesn't implement anything!)
+**We can implement as many interfaces as we want! In addition, interfaces can also `extend` other interfaces (*not* `implements` -- an interface doesn't implement anything!)**
 
 As an example, some food can be steamed so we might want a `Steamable` interface. These are also edible, so we could do the following:
 ```java
@@ -96,18 +119,18 @@ interface Steamable extends Edible {
 
 ```
 
-Any class that `implements Steamable` must then have both a `steam` and `eat` method!
+**Any class that `implements Steamable` must then have both a `steam` and `eat` method!**
 
 
 ## 3.3. super
 In Python, we could use `super()` to refer to methods in the parent class. For instance, we could use `super().__init__()` to call the parent constructor or `super().method()` to call the parent's method.
 
-In Java, we have the `super` keyword that functions in a similar way. If we want to call a parent's constructor, we use `super()`, or `super(a, b, c)` if we needed to pass in some parameters. If we wanted to call a parent's method, we would use `super.method()`!
+**In Java, we have the `super` keyword that functions in a similar way. If we want to call a parent's constructor, we use `super()`, or `super(a, b, c)` if we needed to pass in some parameters. If we wanted to call a parent's method, we would use `super.method()`!**
 
-Note the difference between Python and Java: `super()` is used in Python and has brackets while `super` is used in Java with no brackets!
+Note the difference between Python and Java: `super()` is used in Python and has brackets** while `super` is used in Java with no brackets!**
 
 ### 3.3.1. Constructors with super
-When extending another class, Java *requires* a call to a superclass' constructor to be made in the subclass' constructor. Furthermore, this call *must* be the very first thing done. If no constructor call is explicitly made in the subclass' constructor, then an *implicit* call to `super()` will be made.
+**When extending another class, Java *requires* a call to a superclass' constructor to be made in the subclass' constructor. Furthermore, this call *must* be the very first thing done. If no constructor call is explicitly made in the subclass' constructor, then an *implicit* call to `super()` will be made.**
 
 For instance, this code:
 
@@ -139,11 +162,11 @@ class Child extends Parent {
 }
 ```
 
-If `Parent` didn't have a constructor that takes no arguments, then an error would be raised during compilation. **It's best to explicitly include our super(...) calls in our constructors!** This way we know precisely which constructor is being called by our subclass.
+**If `Parent` didn't have a constructor that takes no arguments, then an error would be raised during compilation. **It's best to explicitly include our super(...) calls in our constructors!** This way we know precisely which constructor is being called by our subclass.**
 
 
 ## 3.4. Polymorphism
-Polymorphism is the ability of an object to take many forms. We consider an object to be polymorphic if it passes multiple `instanceof` tests. For example, if we had the following code:
+**Polymorphism is the ability of an object to take many forms. We consider an object to be polymorphic if it passes multiple `instanceof` tests. For example, if we had the following code:**
 
 ```java
 class Dog extends Canine implements Domesticatable {...}
@@ -151,13 +174,13 @@ class Dog extends Canine implements Domesticatable {...}
 
 Then a Dog is also a Canine (which might have further superclasses like Animal)! It's also Domesticatable, and would pass `instanceof` tests for all of these types.
 
-An example of polymorphism in use is when we have a variable whose value may be of a type other than the variable's type itself: for example being a subclass of that type or if the type in question is an interface, a class that implements it. 
+**An example of polymorphism in use is when we have a variable whose value may be of a type other than the variable's type itself: for example being a subclass of that type or if the type in question is an interface, a class that implements it. **
 
 As an example, the following would exhibit polymorphism:
 ```java
 Animal[] animals = {new Cat(), new Dog(), new Axolotl()};
 
-for (Animal a : animals){
+for (Animal a : animals){ here variable of type Animal value is either cat or dog or axolotl
     a.eat();    // 'a' in this line of code can have various types!
 }
 ```
